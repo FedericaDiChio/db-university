@@ -34,3 +34,8 @@ ORDER BY (`hour`) ASC;
 SELECT `name`, `level` 
 FROM `degrees`
 WHERE `level` = "magistrale";
+
+
+-- 7. Da quanti dipartimenti è composta l'università?
+SELECT COUNT(*)
+FROM `departments`;
