@@ -15,3 +15,9 @@ SELECT *
 FROM `students` 
 WHERE (`date_of_birth`) <= "1991"
 ORDER BY (`date_of_birth`) ASC;
+
+
+-- 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea
+SELECT `name`, `period`, `year`
+FROM `courses` 
+WHERE `period` = "I semestre" AND `year` = "1";
