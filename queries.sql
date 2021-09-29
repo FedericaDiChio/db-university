@@ -77,3 +77,8 @@ GROUP BY `exam_id`;
 SELECT COUNT(*) AS `courses_number`, `department_id`
 FROM `degrees`
 GROUP BY `department_id`;
+
+-- SELECT COUNT(*) AS `courses_number`, `departments`.`name`
+-- FROM `degrees`
+-- JOIN `departments` ON `departments`.`id` = `degrees`.`department_id`
+-- GROUP BY `degrees`.`department_id`;
