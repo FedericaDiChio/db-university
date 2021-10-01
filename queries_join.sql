@@ -32,7 +32,7 @@ JOIN `degrees`
 ON `students`.`degree_id` = `degrees`.`id`
 JOIN `departments`
 ON `degrees`.`department_id` = `departments`.`id`
-ORDER BY (`students`.`name`) ASC, (`students`.`surname`) ASC;
+ORDER BY (`students`.`surname`) ASC, (`students`.`name`) ASC;
 
 
 -- 5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
@@ -59,10 +59,4 @@ JOIN `departments`
 ON `degrees`.`department_id` = `departments`.`id`
 WHERE `departments`.`name` = 'Dipartimento di Matematica'
 ORDER BY (`teachers`.`name`) ASC, (`teachers`.`surname`) ASC;
-
-
-
--- 7. BONUS: Selezionare per ogni studente quanti tentativi d’esame ha sostenuto per
--- superare ciascuno dei suoi esami
-
 
