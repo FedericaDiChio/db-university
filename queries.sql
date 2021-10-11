@@ -82,3 +82,4 @@ GROUP BY `department_id`;
 -- FROM `degrees`
 -- JOIN `departments` ON `departments`.`id` = `degrees`.`department_id`
 -- GROUP BY `degrees`.`department_id`;
+
